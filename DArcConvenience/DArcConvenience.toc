@@ -1,0 +1,7 @@
+## Interface: 40100
+## Title: DArc Conveniences
+## Version: 1.0.1
+## Notes: Add in some keybindings and macros that I'm tired of having to set up on every new toon
+## Author: DArcMattr
+
+functions.lua

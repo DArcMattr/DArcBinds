@@ -1,0 +1,65 @@
+<Bindings>
+  <Binding name="DARC_MARK_MOUSEOVER_STAR" header="DARC_RAID_TARGETING">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 1 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    1 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_CIRCLE">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 2 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    2 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_DIAMOND">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 3 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    3 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_TRIANGLE">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 4 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    4 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_MOON">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 5 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    5 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_SQUARE">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 6 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    6 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_CROSS">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 7 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    7 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_SKULL">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 8 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    8 );
+    end
+  </Binding>
+  <Binding name="DARC_MARK_MOUSEOVER_CLEAR">
+    if ( UnitExists( "mouseover" ) ) then
+      SetRaidTarget( "mouseover", 0 );
+    elseif ( UnitExists( "target" ) ) then
+      SetRaidTarget( "target",    0 );
+    end
+  </Binding>
+</Bindings>

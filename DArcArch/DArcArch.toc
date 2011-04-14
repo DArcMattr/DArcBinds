@@ -1,0 +1,7 @@
+## Interface: 40000
+## Title: DArcArch
+## Version: 1.0.0
+## Notes: Add in some keybindings for Archaeology functions
+## Author: DArcMattr
+
+functions.lua

@@ -1,0 +1,25 @@
+<Bindings>
+	<Binding name="MACRO DArc_fm" header="DARC_H_TARGETING">
+    -- focus mouseover, and more magic
+	</Binding>
+  <Binding name="MACRO DArc_af">
+    -- /assist focus
+	</Binding>
+	<Binding name="MACRO DArc_pm">
+    -- /petattack mouseover, or
+    --if ( UnitExists( "mouseover" ) ) then
+    --  PetAttack( "mouseover" );
+    --else
+    --  PetAttack( );
+    --end
+	</Binding>
+  <Binding name="DARC_SMART_DISMOUNT" header="DARC_H_MOUNTING">
+    if IsMounted() then
+      Dismount()
+      return
+    elseif UnitInVehicle("player") then
+      VehicleExit()
+      return
+    end
+  </Binding>
+</Bindings>
