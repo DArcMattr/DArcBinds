@@ -1,6 +1,6 @@
-## Interface: 40000
+## Interface: 40100
 ## Title: DArcMarks
-## Version: 1.0.0
+## Version: 1.0.1
 ## Notes: Add in keybindings to place raid marks on mouseover, or the target if there is no unit being moused over
 ## Author: DArcMattr
 ## X-Curse-Packaged-Version: r20110113020118

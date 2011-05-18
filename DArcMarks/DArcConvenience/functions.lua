@@ -7,7 +7,7 @@ _G["BINDING_NAME_CLICK DArc_Focus:LeftButton"]     = "Focus mouseover, target, o
 _G["BINDING_NAME_CLICK DArc_Assist:LeftButton"]    = "Assist Focus"
 _G["BINDING_NAME_CLICK DArc_PetAttack:LeftButton"] = "Pet attack mouseover or target"
 
-_G["BINDING_NAME_DARC_H_MOUNTING"]     = "Dismounting"
+_G["BINDING_HEADER_DARC_H_MOUNTING"]     = "Dismounting"
 _G["BINDING_NAME_DARC_SMART_DISMOUNT"] = "Dismount/Leave Vehicle"
 
 -- From some ArenaJunkies forum post, not able to relocate it atm
