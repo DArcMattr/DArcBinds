@@ -5,5 +5,5 @@ move-folders:
    DArcMarks/DArcConveniences: DArcConveniences
 
 manual-changelog:
-  filename: changelog.txt
-  markup-type: plain
+   filename: changelog.txt
+   markup-type: plain
