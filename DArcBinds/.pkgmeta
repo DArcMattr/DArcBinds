@@ -1,9 +1,0 @@
-package-as: DArcBinds
-
-move-folders:
-   DArcMarks/DArcArch: DArcArch
-   DArcMarks/DArcConveniences: DArcConveniences
-
-manual-changelog:
-   filename: changelog.txt
-   markup-type: plain

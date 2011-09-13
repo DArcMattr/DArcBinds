@@ -1,8 +1,8 @@
 package-as: DArcBinds
 
 move-folders:
-   DArcBinds/DArcArch: DArcArch
-   DArcBinds/DArcConveniences: DArcConveniences
+   DArcMarks/DArcArch: DArcArch
+   DArcMarks/DArcConveniences: DArcConveniences
 
 manual-changelog:
    filename: changelog.txt
