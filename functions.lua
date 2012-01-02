@@ -17,7 +17,45 @@
 -- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 -- THE SOFTWARE.
---
+
+------------------------
+-- Secure Button Code --
+------------------------
+
+local macroMarker1 = CreateFrame("Button", "DArc_Marker1", UIParent, "SecureActionButtonTemplate")
+macroMarker1:SetAttribute("type1", "macro")
+macroMarker1:SetAttribute("macrotext1", [[/clearworldmarker 1
+/worldmarker 1
+]])
+
+local macroMarker2 = CreateFrame("Button", "DArc_Marker2", UIParent, "SecureActionButtonTemplate")
+macroMarker2:SetAttribute("type1", "macro")
+macroMarker2:SetAttribute("macrotext1", [[/clearworldmarker 2
+/worldmarker 2
+]])
+
+local macroMarker3 = CreateFrame("Button", "DArc_Marker3", UIParent, "SecureActionButtonTemplate")
+macroMarker3:SetAttribute("type1", "macro")
+macroMarker3:SetAttribute("macrotext1", [[/clearworldmarker 3
+/worldmarker 3
+]])
+
+local macroMarker4 = CreateFrame("Button", "DArc_Marker4", UIParent, "SecureActionButtonTemplate")
+macroMarker4:SetAttribute("type1", "macro")
+macroMarker4:SetAttribute("macrotext1", [[/clearworldmarker 4
+/worldmarker 4
+]])
+
+local macroMarker5 = CreateFrame("Button", "DArc_Marker5", UIParent, "SecureActionButtonTemplate")
+macroMarker5:SetAttribute("type1", "macro")
+macroMarker5:SetAttribute("macrotext1", [[/clearworldmarker 5
+/worldmarker 5
+]])
+
+local macroMarkerClear = CreateFrame("Button", "DArc_MarkerClear", UIParent, "SecureActionButtonTemplate")
+macroMarkerClear:SetAttribute("type1", "macro")
+macroMarkerClear:SetAttribute("macrotext1", "/clearworldmarker all")
+
 --------------------
 -- Binding Labels --
 --------------------
@@ -32,3 +70,11 @@ _G["BINDING_NAME_DARC_MARK_MOUSEOVER_SQUARE"]   = "Assign Square"
 _G["BINDING_NAME_DARC_MARK_MOUSEOVER_CROSS"]    = "Assign Cross"
 _G["BINDING_NAME_DARC_MARK_MOUSEOVER_SKULL"]    = "Assign Skull"
 _G["BINDING_NAME_DARC_MARK_MOUSEOVER_CLEAR"]    = "Clear Raid Icon"
+
+_G["BINDING_HEADER_DARC_MARKERS"]                    = "World Markers"
+_G["BINDING_NAME_CLICK DArc_Marker1:LeftButton"]     = "Place Blue Marker"
+_G["BINDING_NAME_CLICK DArc_Marker2:LeftButton"]     = "Place Green Marker"
+_G["BINDING_NAME_CLICK DArc_Marker3:LeftButton"]     = "Place Purple Marker"
+_G["BINDING_NAME_CLICK DArc_Marker4:LeftButton"]     = "Place Red Marker"
+_G["BINDING_NAME_CLICK DArc_Marker5:LeftButton"]     = "Place Yellow Marker"
+_G["BINDING_NAME_CLICK DArc_MarkerClear:LeftButton"] = "Clear All Markers"

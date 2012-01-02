@@ -1,6 +1,6 @@
-## Interface: 40200
+## Interface: 40300
 ## Title: DArcBinds
-## Version: 1.0.3
+## Version: 1.1.0
 ## Notes: Add in keybindings to place raid marks on mouseover, or the target if there is no unit being moused over
 ## Author: DArcMattr
 

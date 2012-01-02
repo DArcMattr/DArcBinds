@@ -62,4 +62,22 @@
       SetRaidTarget( "target",    0 );
     end
   </Binding>
+ 	<Binding name="CLICK DArc_Marker1:LeftButton" header="DARC_MARKERS">
+    -- /click DArc_Marker1
+	</Binding>
+ 	<Binding name="CLICK DArc_Marker2:LeftButton">
+    -- /click DArc_Marker2
+	</Binding>
+ 	<Binding name="CLICK DArc_Marker3:LeftButton">
+    -- /click DArc_Marker3
+	</Binding>
+ 	<Binding name="CLICK DArc_Marker4:LeftButton">
+    -- /click DArc_Marker4
+	</Binding>
+ 	<Binding name="CLICK DArc_Marker5:LeftButton">
+    -- /click DArc_Marker5
+	</Binding>
+ 	<Binding name="CLICK DArc_MarkerClear:LeftButton">
+    -- /click DArc_MarkerClear
+	</Binding>
 </Bindings>
