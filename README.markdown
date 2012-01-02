@@ -2,7 +2,7 @@ I got tired of having to setup the same macros and clique binds for all my
 toons, so I figured out how to do it all with an addon. My goal in designing
 this collection was to make some convenient and commonly-used actions part of
 the game interface itself, or to address some annoyances, like exiting from
-vehicles, or the &ldquo;Set Focus menu option being broken for third-party raid
+vehicles, or the &ldquo;Set Focus&rdquo; menu option being broken for third-party raid
 frames.
 
 Provides for keybinds for the following areas:
