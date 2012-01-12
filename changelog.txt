@@ -1,1 +1,3 @@
-No functional changes, only attempting to get Curse to recognize my .pkgmeta directives
+2012-01-02
+  Add in world marker keybinds. Now you can circumvent the glitchy raid manager
+	panel, and place those markers to your heart's content.
