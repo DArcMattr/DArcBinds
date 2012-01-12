@@ -17,6 +17,7 @@
 -- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 -- THE SOFTWARE.
+<<<<<<< HEAD
 
 ------------------------
 -- Secure Button Code --
@@ -56,6 +57,9 @@ local macroMarkerClear = CreateFrame("Button", "DArc_MarkerClear", UIParent, "Se
 macroMarkerClear:SetAttribute("type1", "macro")
 macroMarkerClear:SetAttribute("macrotext1", "/clearworldmarker all")
 
+=======
+--
+>>>>>>> 9ec0a5d1adf317587ee61f1f924e9ac5970ee66c
 --------------------
 -- Binding Labels --
 --------------------
@@ -70,6 +74,7 @@ _G["BINDING_NAME_DARC_MARK_MOUSEOVER_SQUARE"]   = "Assign Square"
 _G["BINDING_NAME_DARC_MARK_MOUSEOVER_CROSS"]    = "Assign Cross"
 _G["BINDING_NAME_DARC_MARK_MOUSEOVER_SKULL"]    = "Assign Skull"
 _G["BINDING_NAME_DARC_MARK_MOUSEOVER_CLEAR"]    = "Clear Raid Icon"
+<<<<<<< HEAD
 
 _G["BINDING_HEADER_DARC_MARKERS"]                    = "World Markers"
 _G["BINDING_NAME_CLICK DArc_Marker1:LeftButton"]     = "Place Blue Marker"
@@ -78,3 +83,5 @@ _G["BINDING_NAME_CLICK DArc_Marker3:LeftButton"]     = "Place Purple Marker"
 _G["BINDING_NAME_CLICK DArc_Marker4:LeftButton"]     = "Place Red Marker"
 _G["BINDING_NAME_CLICK DArc_Marker5:LeftButton"]     = "Place Yellow Marker"
 _G["BINDING_NAME_CLICK DArc_MarkerClear:LeftButton"] = "Clear All Markers"
+=======
+>>>>>>> 9ec0a5d1adf317587ee61f1f924e9ac5970ee66c
