@@ -8,6 +8,9 @@
 	<Binding name="CLICK DArc_PetAttack:LeftButton">
     -- /click DArc_PetAttack
 	</Binding>
+	<Binding name="SPELL Fishing">
+    -- use Survey
+	</Binding>
   <Binding name="DARC_SMART_DISMOUNT" header="DARC_H_MOUNTING">
     if IsMounted() then
       Dismount()
