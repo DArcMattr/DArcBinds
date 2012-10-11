@@ -7,7 +7,7 @@ third-party raid frames.
 
 Provides for keybinds for the following things:
 
-<dl> 
+<dl>
 <dt>Archaeology</dt>
 <dd>Binds for Survey & open the archaeology panel</dd>
 <dt>Raid Marks</dt>
@@ -17,7 +17,9 @@ Provides for keybinds for the following things:
 <dt>Mounting</dt>
 <dd>Combination dismount / leave vehicle keybind</dd>
 <dt>Targeting</dt>
-<dd>All-in-one focus mouseover / target and clearing; Pet attack mouseover / target; and assist focus.</dd>
+<dd>All-in-one focus mouseover / target and clearing; Pet attack mouseover / target; and assist focus</dd>
+<dt>Fishing</dt>
+<dd>Now that it's possible to fish without a pole equipped, I'll move this from the macros to the keybinds in my setup</dd>
 </dl>
 
 Commenting / Ticketing is only available on the [WowAce](http://www.wowace.com/addons/darcmarks/) project page.
