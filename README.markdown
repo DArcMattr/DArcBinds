@@ -23,3 +23,5 @@ Provides for keybinds for the following things:
 </dl>
 
 Commenting / Ticketing is only available on the [WowAce](http://www.wowace.com/addons/darcmarks/) project page.
+
+This project is also hosted at [Github](https://github.com/DArcMattr/DArcBinds).
