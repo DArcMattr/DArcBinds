@@ -1,6 +1,6 @@
-## Interface: 50001
+## Interface: 50200
 ## Title: DArcArch
-## Version: 1.0.3
+## Version: 1.0.4
 ## Notes: Add in some keybindings for Archaeology functions
 ## Author: DArcMattr
 
