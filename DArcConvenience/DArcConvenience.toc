@@ -1,6 +1,6 @@
-## Interface: 50200
+## Interface: 50400
 ## Title: DArc Conveniences
-## Version: 1.1.3
+## Version: 1.1.4
 ## Notes: Add in some keybindings and macros that I'm tired of having to set up on every new toon
 ## Author: DArcMattr
 

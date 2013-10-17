@@ -2,6 +2,9 @@
 	<Binding name="CLICK DArc_Focus:LeftButton" header="DARC_H_TARGETING">
     -- /click DArc_Focus
 	</Binding>
+	<Binding name="CLICK DArc_SwapFocus:LeftButton">
+    -- /click DArc_SwapFocus
+	</Binding>
   <Binding name="CLICK DArc_Assist:LeftButton">
     -- /click DArc_Assist
 	</Binding>
