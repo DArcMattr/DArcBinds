@@ -21,8 +21,10 @@ macroFocus:SetAttribute("macrotext1", [[/focus [@mouseover,exists][exists]
 
 local macroFocus = CreateFrame("Button", "DArc_SwapFocus", UIParent, "SecureActionButtonTemplate")
 macroFocus:SetAttribute("type1", "macro")
-macroFocus:SetAttribute("macrotext1", [[/target [@focus]
-/focus [@lasttarget]
+macroFocus:SetAttribute("macrotext1", [[/target focus
+/targetlasttarget
+/focus
+/targetlasttarget
 ]])
 
 local macroAssist = CreateFrame("Button", "DArc_Assist", UIParent, "SecureActionButtonTemplate")
