@@ -14,13 +14,18 @@
 	<Binding name="SPELL Fishing">
     -- use Survey
 	</Binding>
-  <Binding name="DARC_SMART_DISMOUNT" header="DARC_H_MOUNTING">
+  <Binding name="CLICK DArc_Mount:LeftButton" header="DARC_H_MOUNTING">
+    -- /click DArc_Mount
+  </Binding>
+  <Binding name="DARC_SMART_DISMOUNT">
     if IsMounted() then
       Dismount()
       return
     elseif UnitInVehicle("player") then
       VehicleExit()
       return
+    else
+      -- no op
     end
   </Binding>
 </Bindings>

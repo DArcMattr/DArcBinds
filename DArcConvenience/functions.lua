@@ -9,8 +9,14 @@ _G["BINDING_NAME_CLICK DArc_Assist:LeftButton"]    = "Assist Focus"
 _G["BINDING_NAME_CLICK DArc_PetAttack:LeftButton"] = "Pet attack mouseover or target"
 _G["BINDING_NAME_SPELL Fishing"] = "Fishing cast"
 
-_G["BINDING_HEADER_DARC_H_MOUNTING"]     = "Dismounting"
-_G["BINDING_NAME_DARC_SMART_DISMOUNT"] = "Dismount/Leave Vehicle"
+_G["BINDING_HEADER_DARC_H_MOUNTING"]               = "Mounting"
+_G["BINDING_NAME_CLICK DArc_Mount:LeftButton"]     = "Summon Random Favorite Mount"
+_G["BINDING_NAME_DARC_SMART_DISMOUNT"]             = "Dismount/Leave Vehicle"
+
+-- TODO: use class forms
+local macroMount = CreateFrame("Button", "DArc_Mount", UIParent, "SecureActionButtonTemplate")
+macroMount:SetAttribute("type1", "macro")
+macroMount:SetAttribute("macrotext1", [[/run if not IsMounted() then C_MountJournal.Summon(0) end]])
 
 -- From some ArenaJunkies forum post, not able to relocate it atm
 local macroFocus = CreateFrame("Button", "DArc_Focus", UIParent, "SecureActionButtonTemplate")
