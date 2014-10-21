@@ -25,7 +25,8 @@
       VehicleExit()
       return
     else
-      -- no op
+      CancelShapeshiftForm()
+      return
     end
   </Binding>
 </Bindings>
