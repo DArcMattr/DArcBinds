@@ -52,6 +52,24 @@ macroMarker5:SetAttribute("macrotext1", [[/clearworldmarker 5
 /worldmarker 5
 ]])
 
+local macroMarker6 = CreateFrame("Button", "DArc_Marker6", UIParent, "SecureActionButtonTemplate")
+macroMarker6:SetAttribute("type1", "macro")
+macroMarker6:SetAttribute("macrotext1", [[/clearworldmarker 6
+/worldmarker 5
+]])
+
+local macroMarker7 = CreateFrame("Button", "DArc_Marker7", UIParent, "SecureActionButtonTemplate")
+macroMarker7:SetAttribute("type1", "macro")
+macroMarker7:SetAttribute("macrotext1", [[/clearworldmarker 7
+/worldmarker 7
+]])
+
+local macroMarker8 = CreateFrame("Button", "DArc_Marker8", UIParent, "SecureActionButtonTemplate")
+macroMarker8:SetAttribute("type1", "macro")
+macroMarker8:SetAttribute("macrotext1", [[/clearworldmarker 8
+/worldmarker 8
+]])
+
 local macroMarkerClear = CreateFrame("Button", "DArc_MarkerClear", UIParent, "SecureActionButtonTemplate")
 macroMarkerClear:SetAttribute("type1", "macro")
 macroMarkerClear:SetAttribute("macrotext1", "/clearworldmarker all")
@@ -72,9 +90,12 @@ _G["BINDING_NAME_DARC_MARK_MOUSEOVER_SKULL"]    = "Assign Skull"
 _G["BINDING_NAME_DARC_MARK_MOUSEOVER_CLEAR"]    = "Clear Raid Icon"
 
 _G["BINDING_HEADER_DARC_MARKERS"]                    = "World Markers"
-_G["BINDING_NAME_CLICK DArc_Marker1:LeftButton"]     = "Place Blue Marker"
-_G["BINDING_NAME_CLICK DArc_Marker2:LeftButton"]     = "Place Green Marker"
-_G["BINDING_NAME_CLICK DArc_Marker3:LeftButton"]     = "Place Purple Marker"
-_G["BINDING_NAME_CLICK DArc_Marker4:LeftButton"]     = "Place Red Marker"
-_G["BINDING_NAME_CLICK DArc_Marker5:LeftButton"]     = "Place Yellow Marker"
+_G["BINDING_NAME_CLICK DArc_Marker1:LeftButton"]     = "Place square Marker"
+_G["BINDING_NAME_CLICK DArc_Marker2:LeftButton"]     = "Place triangle Marker"
+_G["BINDING_NAME_CLICK DArc_Marker3:LeftButton"]     = "Place diamond Marker"
+_G["BINDING_NAME_CLICK DArc_Marker4:LeftButton"]     = "Place cross Marker"
+_G["BINDING_NAME_CLICK DArc_Marker5:LeftButton"]     = "Place star Marker"
+_G["BINDING_NAME_CLICK DArc_Marker6:LeftButton"]     = "Place circle Marker"
+_G["BINDING_NAME_CLICK DArc_Marker7:LeftButton"]     = "Place moon Marker"
+_G["BINDING_NAME_CLICK DArc_Marker8:LeftButton"]     = "Place skull Marker"
 _G["BINDING_NAME_CLICK DArc_MarkerClear:LeftButton"] = "Clear All Markers"

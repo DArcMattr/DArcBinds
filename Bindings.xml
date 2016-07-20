@@ -77,6 +77,15 @@
  	<Binding name="CLICK DArc_Marker5:LeftButton">
     -- /click DArc_Marker5
 	</Binding>
+ 	<Binding name="CLICK DArc_Marker6:LeftButton">
+    -- /click DArc_Marker6
+	</Binding>
+ 	<Binding name="CLICK DArc_Marker7:LeftButton">
+    -- /click DArc_Marker7
+	</Binding>
+ 	<Binding name="CLICK DArc_Marker8:LeftButton">
+    -- /click DArc_Marker8
+	</Binding>
  	<Binding name="CLICK DArc_MarkerClear:LeftButton">
     -- /click DArc_MarkerClear
 	</Binding>
