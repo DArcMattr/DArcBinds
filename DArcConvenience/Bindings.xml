@@ -1,25 +1,33 @@
 <Bindings>
-	<Binding name="CLICK DArc_Focus:LeftButton" header="DARC_H_TARGETING">
+	<Binding name="CLICK DArc_Focus:LeftButton" header="DARC_H_TARGETING" category="ADDONS">
     -- /click DArc_Focus
 	</Binding>
-	<Binding name="CLICK DArc_SwapFocus:LeftButton">
+	<Binding name="CLICK DArc_SwapFocus:LeftButton" category="ADDONS">
     -- /click DArc_SwapFocus
 	</Binding>
-  <Binding name="CLICK DArc_Assist:LeftButton">
+  <Binding name="CLICK DArc_Assist:LeftButton" category="ADDONS">
     -- /click DArc_Assist
 	</Binding>
-	<Binding name="CLICK DArc_PetAttack:LeftButton">
+	<Binding name="CLICK DArc_PetAttack:LeftButton" category="ADDONS">
     -- /click DArc_PetAttack
 	</Binding>
-	<Binding name="SPELL Fishing">
+	<Binding name="SPELL Fishing" category="ADDONS">
     -- use Survey
 	</Binding>
-  <Binding name="DARC_SMART_DISMOUNT" header="DARC_H_MOUNTING">
+  <Binding name="CLICK DArc_Mount:LeftButton" header="DARC_H_MOUNTING" category="ADDONS">
+    -- /click DArc_Mount
+  </Binding>
+  <Binding name="DARC_SMART_DISMOUNT" category="ADDONS">
     if IsMounted() then
       Dismount()
       return
     elseif UnitInVehicle("player") then
       VehicleExit()
+      return
+	elseif UnitAura("player", "Zen Flight") ~= nil then
+	  CancelUnitBuff("player", "Zen Flight")
+    else
+      CancelShapeshiftForm()
       return
     end
   </Binding>

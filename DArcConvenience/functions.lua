@@ -9,8 +9,40 @@ _G["BINDING_NAME_CLICK DArc_Assist:LeftButton"]    = "Assist Focus"
 _G["BINDING_NAME_CLICK DArc_PetAttack:LeftButton"] = "Pet attack mouseover or target"
 _G["BINDING_NAME_SPELL Fishing"] = "Fishing cast"
 
-_G["BINDING_HEADER_DARC_H_MOUNTING"]     = "Dismounting"
-_G["BINDING_NAME_DARC_SMART_DISMOUNT"] = "Dismount/Leave Vehicle"
+_G["BINDING_HEADER_DARC_H_MOUNTING"]               = "Mounting"
+_G["BINDING_NAME_CLICK DArc_Mount:LeftButton"]     = "Summon Random Favorite Mount"
+_G["BINDING_NAME_DARC_SMART_DISMOUNT"]             = "Dismount/Leave Vehicle"
+
+local macroMount = CreateFrame("Button", "DArc_Mount", UIParent, "SecureActionButtonTemplate")
+-- XXX not working yet
+function DArcMounter()
+	local class_spells = {}
+
+	class_spells["MONK"] = 125883
+	class_spells["SHAMAN"] = 2645
+	class_spells["DRUID"] = 783
+
+	local _, classname = UnitClass("player")
+	local not_shifted = ( 0 == GetShapeshiftForm("player") )
+	local form_known = IsSpellKnown( class_spells[classname] )
+
+	print( "Is class", classname, " ", class_spells[classname], " form is known? ", form_known, "; shifted? ", not_shifted )
+
+	if ( form_known and not_shifted ) then
+		print( "casting form ", class_spells[classname] )
+		CastSpellById( class_spells[classname] )
+		return
+	elseif InCombatLockdown() or IsMounted() then
+		print( "doing nothing" )
+		return
+	else
+		print( "mounting" )
+		C_MountJournal.Summon(0)
+		return
+	end
+end
+macroMount:SetAttribute("type1", "macro")
+macroMount:SetAttribute("macrotext1", [[/run DArcMounter()]])
 
 -- From some ArenaJunkies forum post, not able to relocate it atm
 local macroFocus = CreateFrame("Button", "DArc_Focus", UIParent, "SecureActionButtonTemplate")
