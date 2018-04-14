@@ -19,8 +19,8 @@
 -- THE SOFTWARE.
 
 for i=0,8 do
-	_G["BINDING_NAME_DARC_MARK_MOUSEOVER_"..i] = i == 0 and "Clear Raid Icon" or "Assign {rt"..i.."}"
-	_G["BINDING_NAME_CLICK DArc_Marker_"..i..":LeftButton"] = i == 0 and "Clear All Markers" or "Place {rt"..i.."} Marker"
+	_G["BINDING_NAME_DARC_MARK_MOUSEOVER_"..i] = i == 0 and "Clear Raid Icon" or "Assign |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_"..i..":0|t Raid Icon"
+	_G["BINDING_NAME_CLICK DArc_Marker_"..i..":LeftButton"] = i == 0 and "Clear All Markers" or "Place |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_"..i..":0|t World Marker"
 
 	local button = CreateFrame("Button", "DArc_Marker_"..i, nil, "SecureActionButtonTemplate")
 	button:SetAttribute("type", "macro")
@@ -41,10 +41,10 @@ _G["BINDING_NAME_SPELL Survey"]      = "Survey"
 _G["BINDING_NAME_SPELL Archaeology"] = "Archaeology Frame"
 
 _G["BINDING_HEADER_DARC_H_TARGETING"]              = "Additional Targeting Functions"
-_G["BINDING_NAME_CLICK DArc_Focus:LeftButton"]     = "Focus mouseover, target, or clearfocus"
+_G["BINDING_NAME_CLICK DArc_Focus:LeftButton"]     = "Focus Mouseover, Target, or clear focus if no target selected"
 _G["BINDING_NAME_CLICK DArc_SwapFocus:LeftButton"] = "Swap Focus with Target"
 _G["BINDING_NAME_CLICK DArc_Assist:LeftButton"]    = "Assist Focus"
-_G["BINDING_NAME_CLICK DArc_PetAttack:LeftButton"] = "Pet attack mouseover or target"
+_G["BINDING_NAME_CLICK DArc_PetAttack:LeftButton"] = "Pet attack Mouseover or Target"
 _G["BINDING_NAME_SPELL Fishing"] = "Fishing cast"
 
 _G["BINDING_HEADER_DARC_H_MOUNTING"]     = "Dismounting"
