@@ -1,54 +1,54 @@
 <Bindings>
-  <Binding name="DARC_MARK_MOUSEOVER_STAR" header="DARC_RAID_TARGETING" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_1" header="DARC_RAID_TARGETING" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 1 );
     elseif ( UnitExists( "target" ) ) then
       SetRaidTarget( "target",    1 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_CIRCLE" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_2" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 2 );
     elseif ( UnitExists( "target" ) ) then
       SetRaidTarget( "target",    2 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_DIAMOND" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_3" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 3 );
     elseif ( UnitExists( "target" ) ) then
       SetRaidTarget( "target",    3 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_TRIANGLE" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_4" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 4 );
     elseif ( UnitExists( "target" ) ) then
       SetRaidTarget( "target",    4 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_MOON" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_5" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 5 );
     elseif ( UnitExists( "target" ) ) then
       SetRaidTarget( "target",    5 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_SQUARE" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_6" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 6 );
     elseif ( UnitExists( "target" ) ) then
       SetRaidTarget( "target",    6 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_CROSS" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_7" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 7 );
     elseif ( UnitExists( "target" ) ) then
       SetRaidTarget( "target",    7 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_SKULL" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_8" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 8 );
     elseif ( UnitExists( "target" ) ) then
@@ -62,31 +62,61 @@
       SetRaidTarget( "target",    0 );
     end
   </Binding>
- 	<Binding name="CLICK DArc_Marker1:LeftButton" header="DARC_MARKERS" category="ADDONS">
+  <Binding name="CLICK DArc_Marker_1:LeftButton" header="DARC_MARKERS" category="ADDONS">
     -- /click DArc_Marker1
-	</Binding>
- 	<Binding name="CLICK DArc_Marker2:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_2:LeftButton" category="ADDONS">
     -- /click DArc_Marker2
-	</Binding>
- 	<Binding name="CLICK DArc_Marker3:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_3:LeftButton" category="ADDONS">
     -- /click DArc_Marker3
-	</Binding>
- 	<Binding name="CLICK DArc_Marker4:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_4:LeftButton" category="ADDONS">
     -- /click DArc_Marker4
-	</Binding>
- 	<Binding name="CLICK DArc_Marker5:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_5:LeftButton" category="ADDONS">
     -- /click DArc_Marker5
-	</Binding>
- 	<Binding name="CLICK DArc_Marker6:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_6:LeftButton" category="ADDONS">
     -- /click DArc_Marker6
-	</Binding>
- 	<Binding name="CLICK DArc_Marker7:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_7:LeftButton" category="ADDONS">
     -- /click DArc_Marker7
-	</Binding>
- 	<Binding name="CLICK DArc_Marker8:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_8:LeftButton" category="ADDONS">
     -- /click DArc_Marker8
-	</Binding>
- 	<Binding name="CLICK DArc_MarkerClear:LeftButton" category="ADDONS">
+  </Binding>
+  <Binding name="CLICK DArc_Marker_Clear:LeftButton" category="ADDONS">
     -- /click DArc_MarkerClear
-	</Binding>
+  </Binding>
+  <Binding name="SPELL Survey" header="DARC_H_ARCH" category="ADDONS">
+    -- use Survey
+  </Binding>
+  <Binding name="SPELL Archaeology" category="ADDONS">
+    -- use Archaeology
+  </Binding>
+  <Binding name="CLICK DArc_Focus:LeftButton" header="DARC_H_TARGETING" category="ADDONS">
+    -- /click DArc_Focus
+  </Binding>
+  <Binding name="CLICK DArc_SwapFocus:LeftButton" category="ADDONS">
+    -- /click DArc_SwapFocus
+  </Binding>
+  <Binding name="CLICK DArc_Assist:LeftButton" category="ADDONS">
+    -- /click DArc_Assist
+  </Binding>
+  <Binding name="CLICK DArc_PetAttack:LeftButton" category="ADDONS">
+    -- /click DArc_PetAttack
+  </Binding>
+  <Binding name="SPELL Fishing" category="ADDONS">
+    -- use Survey
+  </Binding>
+  <Binding name="DARC_SMART_DISMOUNT" header="DARC_H_MOUNTING" category="ADDONS">
+    if IsMounted() then
+      Dismount()
+      return
+    elseif UnitInVehicle("player") then
+      VehicleExit()
+      return
+    end
+  </Binding>
 </Bindings>

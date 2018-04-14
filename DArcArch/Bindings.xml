@@ -1,8 +1,0 @@
-<Bindings>
-	<Binding name="SPELL Survey" header="DARC_H_ARCH" category="ADDONS">
-    -- use Survey
-	</Binding>
-	<Binding name="SPELL Archaeology" category="ADDONS">
-    -- use Archaeology
-	</Binding>
-</Bindings>

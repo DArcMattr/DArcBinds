@@ -1,5 +1,1 @@
 package-as: DArcBinds
-
-move-folders:
-   DArcBinds/DArcArch: DArcArch
-   DArcBinds/DArcConvenience: DArcConvenience
