@@ -1,5 +1,6 @@
 Slim down your actionbar keybinds by moving more macros from your actionbars to
-your muscle memory.
+your muscle memory. The game's own UI is used. You will need to set the key
+bindings to something you find makes sense for you..
 
 I got tired of having to set up the same macros, Clique and key binds for all
 my toons, so I figured out how to do it all with an addon. My goal in designing
@@ -8,7 +9,8 @@ the game interface itself, or to address some annoyances, like exiting from
 vehicles, or the &ldquo;Set Focus&rdquo; menu option being broken for
 third-party raid frames.
 
-Provides for keybinds for the following things:
+Provides for additional keybinds for the following things, found in the Game
+Menu under "Key Bindings" > "AddOns":
 
 <dl>
 <dt>Archaeology</dt>
