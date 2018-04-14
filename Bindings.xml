@@ -55,7 +55,7 @@
       SetRaidTarget( "target",    8 );
     end
   </Binding>
-  <Binding name="DARC_MARK_MOUSEOVER_CLEAR" category="ADDONS">
+  <Binding name="DARC_MARK_MOUSEOVER_0" category="ADDONS">
     if ( UnitExists( "mouseover" ) ) then
       SetRaidTarget( "mouseover", 0 );
     elseif ( UnitExists( "target" ) ) then
@@ -63,37 +63,37 @@
     end
   </Binding>
   <Binding name="CLICK DArc_Marker_1:LeftButton" header="DARC_MARKERS" category="ADDONS">
-    -- /click DArc_Marker1
+    -- /click DArc_Marker_1
   </Binding>
   <Binding name="CLICK DArc_Marker_2:LeftButton" category="ADDONS">
-    -- /click DArc_Marker2
+    -- /click DArc_Marker_2
   </Binding>
   <Binding name="CLICK DArc_Marker_3:LeftButton" category="ADDONS">
-    -- /click DArc_Marker3
+    -- /click DArc_Marker_3
   </Binding>
   <Binding name="CLICK DArc_Marker_4:LeftButton" category="ADDONS">
-    -- /click DArc_Marker4
+    -- /click DArc_Marker_4
   </Binding>
   <Binding name="CLICK DArc_Marker_5:LeftButton" category="ADDONS">
-    -- /click DArc_Marker5
+    -- /click DArc_Marker_5
   </Binding>
   <Binding name="CLICK DArc_Marker_6:LeftButton" category="ADDONS">
-    -- /click DArc_Marker6
+    -- /click DArc_Marker_6
   </Binding>
   <Binding name="CLICK DArc_Marker_7:LeftButton" category="ADDONS">
-    -- /click DArc_Marker7
+    -- /click DArc_Marker_7
   </Binding>
   <Binding name="CLICK DArc_Marker_8:LeftButton" category="ADDONS">
-    -- /click DArc_Marker8
+    -- /click DArc_Marker_8
   </Binding>
-  <Binding name="CLICK DArc_Marker_Clear:LeftButton" category="ADDONS">
-    -- /click DArc_MarkerClear
+  <Binding name="CLICK DArc_Marker_0:LeftButton" category="ADDONS">
+    -- /click DArc_Marker_0
   </Binding>
   <Binding name="SPELL Survey" header="DARC_H_ARCH" category="ADDONS">
-    -- use Survey
+    -- /use Survey
   </Binding>
   <Binding name="SPELL Archaeology" category="ADDONS">
-    -- use Archaeology
+    -- /use Archaeology
   </Binding>
   <Binding name="CLICK DArc_Focus:LeftButton" header="DARC_H_TARGETING" category="ADDONS">
     -- /click DArc_Focus
@@ -108,7 +108,7 @@
     -- /click DArc_PetAttack
   </Binding>
   <Binding name="SPELL Fishing" category="ADDONS">
-    -- use Survey
+    -- /use Survey
   </Binding>
   <Binding name="DARC_SMART_DISMOUNT" header="DARC_H_MOUNTING" category="ADDONS">
     if IsMounted() then

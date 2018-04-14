@@ -18,87 +18,23 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 -- THE SOFTWARE.
 
-------------------------
--- Secure Button Code --
-------------------------
+for i=0,8 do
+	_G["BINDING_NAME_DARC_MARK_MOUSEOVER_"..i] = i == 0 and "Clear Raid Icon" or "Assign {rt"..i.."}"
+	_G["BINDING_NAME_CLICK DArc_Marker_"..i..":LeftButton"] = i == 0 and "Clear All Markers" or "Place {rt"..i.."} Marker"
 
-local macroMarker1 = CreateFrame("Button", "DArc_Marker_Square", UIParent, "SecureActionButtonTemplate")
-macroMarker1:SetAttribute("type1", "macro")
-macroMarker1:SetAttribute("macrotext1", [[/clearworldmarker 1
-/worldmarker 1
-]])
+	local button = CreateFrame("Button", "DArc_Marker_"..i, nil, "SecureActionButtonTemplate")
+	button:SetAttribute("type", "macro")
+	button:RegisterForClicks("AnyDown")
 
-local macroMarker2 = CreateFrame("Button", "DArc_Marker_Triangle", UIParent, "SecureActionButtonTemplate")
-macroMarker2:SetAttribute("type1", "macro")
-macroMarker2:SetAttribute("macrotext1", [[/clearworldmarker 2
-/worldmarker 2
-]])
+	if i == 0 then
+		button:SetAttribute("macrotext", "/clearworldmarker all")
+	else
+		button:SetAttribute("macrotext", "/clearworldmarker "..i.."\n/worldmarker"..i)
+	end
+end
 
-local macroMarker3 = CreateFrame("Button", "DArc_Marker3", UIParent, "SecureActionButtonTemplate")
-macroMarker3:SetAttribute("type1", "macro")
-macroMarker3:SetAttribute("macrotext1", [[/clearworldmarker 3
-/worldmarker 3
-]])
-
-local macroMarker4 = CreateFrame("Button", "DArc_Marker4", UIParent, "SecureActionButtonTemplate")
-macroMarker4:SetAttribute("type1", "macro")
-macroMarker4:SetAttribute("macrotext1", [[/clearworldmarker 4
-/worldmarker 4
-]])
-
-local macroMarker5 = CreateFrame("Button", "DArc_Marker5", UIParent, "SecureActionButtonTemplate")
-macroMarker5:SetAttribute("type1", "macro")
-macroMarker5:SetAttribute("macrotext1", [[/clearworldmarker 5
-/worldmarker 5
-]])
-
-local macroMarker6 = CreateFrame("Button", "DArc_Marker6", UIParent, "SecureActionButtonTemplate")
-macroMarker6:SetAttribute("type1", "macro")
-macroMarker6:SetAttribute("macrotext1", [[/clearworldmarker 6
-/worldmarker 5
-]])
-
-local macroMarker7 = CreateFrame("Button", "DArc_Marker7", UIParent, "SecureActionButtonTemplate")
-macroMarker7:SetAttribute("type1", "macro")
-macroMarker7:SetAttribute("macrotext1", [[/clearworldmarker 7
-/worldmarker 7
-]])
-
-local macroMarker8 = CreateFrame("Button", "DArc_Marker8", UIParent, "SecureActionButtonTemplate")
-macroMarker8:SetAttribute("type1", "macro")
-macroMarker8:SetAttribute("macrotext1", [[/clearworldmarker 8
-/worldmarker 8
-]])
-
-local macroMarkerClear = CreateFrame("Button", "DArc_MarkerClear", UIParent, "SecureActionButtonTemplate")
-macroMarkerClear:SetAttribute("type1", "macro")
-macroMarkerClear:SetAttribute("macrotext1", "/clearworldmarker all")
-
---------------------
--- Binding Labels --
---------------------
-
-_G["BINDING_HEADER_DARC_RAID_TARGETING"]     = "Additional Raid Targeting on Mouseover or Target"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_1"]     = "Assign {star} Star"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_2"]     = "Assign {circle} Circle"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_3"]     = "Assign {diamond} Diamond"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_4"]     = "Assign {triangle} Triangle"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_5"]     = "Assign {moon} Moon"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_6"]     = "Assign {square} Square"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_7"]     = "Assign {cross} Cross"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_8"]     = "Assign {skull} Skull"
-_G["BINDING_NAME_DARC_MARK_MOUSEOVER_CLEAR"] = "Clear Raid Icon"
-
-_G["BINDING_HEADER_DARC_MARKERS"]                    = "World Markers"
-_G["BINDING_NAME_CLICK DArc_Marker_1:LeftButton"]     = "Place {Square} Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_2:LeftButton"]     = "Place triangle Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_3:LeftButton"]     = "Place diamond Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_4:LeftButton"]     = "Place cross Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_5:LeftButton"]     = "Place star Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_6:LeftButton"]     = "Place circle Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_7:LeftButton"]     = "Place moon Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_8:LeftButton"]     = "Place skull Marker"
-_G["BINDING_NAME_CLICK DArc_Marker_Clear:LeftButton"] = "Clear All Markers"
+_G["BINDING_HEADER_DARC_RAID_TARGETING"] = "Additional Raid Targeting on Mouseover or Target"
+_G["BINDING_HEADER_DARC_MARKERS"]        = "World Markers"
 
 _G["BINDING_HEADER_DARC_H_ARCH"]     = "Archaeology"
 _G["BINDING_NAME_SPELL Survey"]      = "Survey"
