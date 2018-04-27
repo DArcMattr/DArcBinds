@@ -19,8 +19,12 @@
 -- THE SOFTWARE.
 
 for i=0,8 do
-	_G["BINDING_NAME_DARC_MARK_MOUSEOVER_"..i] = i == 0 and "Clear Raid Icon" or "Assign |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_"..i..":0|t Raid Icon"
-	_G["BINDING_NAME_CLICK DArc_Marker_"..i..":LeftButton"] = i == 0 and "Clear All Markers" or "Place |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_"..i..":0|t World Marker"
+	_G["BINDING_NAME_DARC_MARK_MOUSEOVER_"..i] = i == 0 and
+		"Clear Raid Icon" or
+		"Assign |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_"..i..":0|t Raid Icon"
+	_G["BINDING_NAME_CLICK DArc_Marker_"..i..":LeftButton"] = i == 0 and
+		"Clear All Markers" or
+		"Place |TInterface\\TargetingFrame\\UI-RaidTargetingIcon_"..i..":0|t World Marker"
 
 	local button = CreateFrame("Button", "DArc_Marker_"..i, nil, "SecureActionButtonTemplate")
 	button:SetAttribute("type", "macro")
@@ -29,7 +33,7 @@ for i=0,8 do
 	if i == 0 then
 		button:SetAttribute("macrotext", "/clearworldmarker all")
 	else
-		button:SetAttribute("macrotext", "/clearworldmarker "..i.."\n/worldmarker"..i)
+		button:SetAttribute("macrotext", "/clearworldmarker "..i.."\n/worldmarker "..i)
 	end
 end
 
