@@ -1,6 +1,6 @@
 ## Interface: 90002
 ## Title: DArcBinds
-## Version: 9.0.0.0
+## Version: 9.0.2.0
 ## Notes: Provides additional keybindings for things I think should be in the game.
 ## Author: DArcMattr
 
